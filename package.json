@@ -1,0 +1,39 @@
+{
+  "name": "fullstack-project-ideas-api",
+  "version": "1.0.0",
+  "description": "api for storing list of fullstack project ideas",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisyamap/fullstack-project-ideas-api.git"
+  },
+  "author": "Swuks",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/hisyamap/fullstack-project-ideas-api/issues"
+  },
+  "homepage": "https://github.com/hisyamap/fullstack-project-ideas-api#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.4",
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

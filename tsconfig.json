@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+        "module": "NodeNext", // Use ESNext module system (ES modules)
+        "target": "ES2020", // Compile to the latest ECMAScript version
+        "moduleResolution": "NodeNext", // Resolve modules using Node.js style
+        "esModuleInterop": true, // Enables interop between ES modules and CommonJS
+        "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+        "strict": true, // Enables strict type-checking
+        "skipLibCheck": true, // Skip type-checking declaration files (faster builds)
+        "rootDir": "src",
+        "outDir": "dist", // Specifies output directory for compiled files
+        "allowImportingTsExtensions": true, // Allows importing TypeScript files without specifying the extension
+        "noEmit": true, // Do not emit outputs
+    },
+    "include": ["src"]
+}
