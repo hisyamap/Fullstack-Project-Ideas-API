@@ -17,12 +17,12 @@ export const auth = async(req: AuthRequest, res: Response, next: NextFunction) =
         const decoded = jwt.verify(token, process.env.JWT_SECRET || "secret") as {
             id: string;
         };
-
-        req.user = { id: decoded.id };
-
+        
         if(!decoded?.id) {
             return httpResponse(401, "Unauthorized: Invalid token", {}, res);
         }
+
+        req.user = { id: decoded.id };
 
         next();
 

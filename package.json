@@ -4,7 +4,6 @@
   "description": "api for storing list of fullstack project ideas",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec tsx src/index.ts",
     "start": "node dist/index.js",
     "build": "tsc"
@@ -20,6 +19,8 @@
   },
   "homepage": "https://github.com/hisyamap/fullstack-project-ideas-api#readme",
   "dependencies": {
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.0",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
